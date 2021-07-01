@@ -43,7 +43,7 @@ function Write_text(){
     var footer = document.getElementById("in2").value;
     ctx.textAlign = 'center';
     ctx.fillText(header,  150, 20);
-    ctx.fillText(footer, 150,210)
+    ctx.fillText(footer, 150,c.height-10)
 }
 function download_image()
 {
