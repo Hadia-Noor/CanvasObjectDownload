@@ -1,3 +1,9 @@
+/*INCLUDES:
+Lea Verou's color contrast:
+https://codepen.io/enxaneta/pen/729bdb57bcace876689066ba81417fc7
+hsl to rgb to hex: 
+https://codepen.io/enxaneta/pen/15d04eb1b8b68c95cd5298b46b2eabb8
+*/
 function init()
 {
     let imgInput = document.getElementById('imageInput');
@@ -31,7 +37,8 @@ function init()
 function Write_text(){
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
-    ctx.font = "12px Arial";
+    ctx.font = "15px Arial";
+    ctx.fillStyle = 'rgb(0,0,0,0.6)';
     var header = document.getElementById("in").value;
     var footer = document.getElementById("in2").value;
     ctx.textAlign = 'center';
@@ -51,4 +58,3 @@ function clear_Canvas()
 {
     window.location.reload();
 }
-
